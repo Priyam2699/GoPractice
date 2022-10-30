@@ -8,8 +8,8 @@ var z bool
 
 func main() {
 
-	fmt.Printf("%T\n", x)
-	fmt.Printf("%T\n", y)
-	fmt.Printf("%T\n", z)
+	fmt.Printf("%v %T\n", x, x)
+	fmt.Printf("%v %T\n", y, y)
+	fmt.Printf("%v %T\n", z, z)
 
 }
