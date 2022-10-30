@@ -2,10 +2,16 @@ package main
 
 import "fmt"
 
+var y = 21
+var z = "Shaken not stirred"
+var x = true
+
+// %T used to check the type of the variable
 func main() {
 
-	x := 42
-	fmt.Println(x)
-	x = 100
-	fmt.Println(x)
+	fmt.Println(y)
+	fmt.Printf("%T \n", y)
+	fmt.Printf("%T \n", z)
+	fmt.Printf("%T \n", x)
+
 }
