@@ -7,6 +7,7 @@ var z = "Shaken not stirred"
 var x = true
 
 // %T used to check the type of the variable
+// is a static programming language
 func main() {
 
 	fmt.Println(y)
