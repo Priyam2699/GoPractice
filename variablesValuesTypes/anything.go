@@ -17,4 +17,8 @@ func main() {
 	b = 21
 	fmt.Println(b)
 	fmt.Printf("%T\n", b)
+	// type conversion
+	b = hotdog(a)
+	fmt.Println(b)
+	fmt.Printf("%T\n", b)
 }
