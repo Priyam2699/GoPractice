@@ -4,13 +4,15 @@ import "fmt"
 
 func main() {
 
-	// if the variable is declared and initialized in if statements then it limits the scope
-	if x := 42; x != 2 {
-		fmt.Println("001")
+	var x int
+	fmt.Scan(&x)
+
+	if x%2 == 0 {
+		fmt.Println("Even")
+	} else if x < 0 {
+		fmt.Println("Number if less than 0")
+	} else {
+		fmt.Println("Number is odd")
 	}
 
-	fmt.Println("Hello")
-	fmt.Println("Priyam")
-	// the below line will not run
-	//fmt.Println(x)
 }
