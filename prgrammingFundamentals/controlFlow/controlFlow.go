@@ -4,19 +4,10 @@ import "fmt"
 
 func main() {
 
-	x := 0
-	for {
+	for i := 33; i < 123; i++ {
 
-		x++
-		if x > 100 {
-			break
-		}
+		fmt.Printf("%v\t%#U\n", string(i), i)
 
-		if x%2 != 0 {
-			continue
-		}
-		fmt.Println(x)
-		
 	}
 
 }
