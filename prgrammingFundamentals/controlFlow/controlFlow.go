@@ -4,15 +4,19 @@ import "fmt"
 
 func main() {
 
-	x := 1
+	x := 0
 	for {
 
-		if x > 10 {
+		x++
+		if x > 100 {
 			break
 		}
-		fmt.Println(x)
-		x++
 
+		if x%2 != 0 {
+			continue
+		}
+		fmt.Println(x)
+		
 	}
 
 }
