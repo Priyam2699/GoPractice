@@ -4,10 +4,13 @@ import "fmt"
 
 func main() {
 
-	for i := 33; i < 123; i++ {
-
-		fmt.Printf("%v\t%#U\n", string(i), i)
-
+	// if the variable is declared and initialized in if statements then it limits the scope
+	if x := 42; x != 2 {
+		fmt.Println("001")
 	}
 
+	fmt.Println("Hello")
+	fmt.Println("Priyam")
+	// the below line will not run
+	//fmt.Println(x)
 }
