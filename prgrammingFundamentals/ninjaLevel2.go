@@ -2,13 +2,15 @@ package main
 
 import "fmt"
 
+const (
+	a = 2022 + iota
+	b = 2022 + iota
+	c = 2022 + iota
+	d = 2022 + iota
+)
+
 func main() {
 
-	// uses a raw string literal
-	s := `Here is a Raw
-    String
-                Literal
-`
+	fmt.Println(a, b, c, d)
 
-	fmt.Println(s)
 }
