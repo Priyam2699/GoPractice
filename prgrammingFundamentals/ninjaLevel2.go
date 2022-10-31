@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+const (
+	a     = 42
+	b int = 41
+)
+
 func main() {
 
 	a := 42 == 42
