@@ -2,25 +2,19 @@ package main
 
 import "fmt"
 
+const a int64 = 42
+const b float32 = 42.555
+const c string = "James Bond"
+
+// or you can write this
+
+const (
+	d int32   = 41
+	e float64 = 41.555
+	f string  = "Indiana Jones"
+)
+
 func main() {
 
-	// s is a string
-	s := `Hello "ABCD"`
-	var str = `Hello "Iqbal"`
-
-	fmt.Println(s)
-	fmt.Println(str)
-
-	bs := []byte(s)
-	fmt.Printf("%T \n %v", bs, bs)
-
-	for i, v := range s {
-		fmt.Println(i, v)
-	}
-
-	var x = "世界"
-
-	fmt.Println([]byte(x))
-	fmt.Println([]rune(x))
-
+	fmt.Println(a, b, c, d, e, f)
 }
