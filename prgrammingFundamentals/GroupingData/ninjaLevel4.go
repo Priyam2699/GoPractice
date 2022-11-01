@@ -11,4 +11,11 @@ func main() {
 	fmt.Println(x[2:7])
 	fmt.Println(x[1:6])
 
+	x = append(x, 52)
+	fmt.Println(x)
+
+	x = append(x, []int{56, 57, 58, 59, 60}...)
+
+	fmt.Println(x)
+
 }
