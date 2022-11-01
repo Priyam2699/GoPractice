@@ -4,22 +4,19 @@ import "fmt"
 
 func main() {
 
-	x := []int{4, 5, 7, 8, 42}
+	// make function to assign capacity at last
+	// ma(group Type,length,capacity)
+	x := make([]int, 15, 15)
+
+	fmt.Println(cap(x))
 	fmt.Println(len(x))
 	fmt.Println(x)
 
-	var val int
-	fmt.Scan(&val)
+	x = append(x, 5)
 
-	for i, v := range x {
-
-		if v == val {
-			fmt.Println("Element found at position ", i)
-			fmt.Println("Now deleting the element")
-			x = append(x[:i], x[i+1:]...) // variadic parameter to take whole slice as an input
-			fmt.Printf("The slice after deletion is %v", x)
-			break
-		}
-	}
+	// if the size becomes greater than capacity then the capacity becomes double the original capacity
+	fmt.Println(cap(x))
+	fmt.Println(len(x))
+	fmt.Println(x)
 
 }
