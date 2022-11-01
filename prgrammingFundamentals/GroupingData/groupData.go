@@ -21,4 +21,10 @@ func main() {
 		fmt.Println(a)
 	}
 
+	// add key value pair in map
+	m["Iqbal"] = 55
+	for c, d := range m {
+		fmt.Printf("Key: %v\t\tValue: %v\n", c, d)
+	}
+
 }
