@@ -4,13 +4,17 @@ import "fmt"
 
 func main() {
 
-	switch {
+	var favSport string
+	fmt.Scan(&favSport)
+	switch favSport {
 
-	case false:
-		fmt.Println("Condition is false")
+	case "skiing":
+		fmt.Println("Go to Blue Mountain")
 		fallthrough
-	case true:
-		fmt.Println("Condition is true")
+	case "swimming":
+		fmt.Println("GO to Goa")
+	case "surfing":
+		fmt.Println("Go to Hawai")
 
 	}
 
