@@ -4,11 +4,13 @@ import "fmt"
 
 func main() {
 
-	for i := 10; i <= 100; i++ {
+	switch {
 
-		if i%4 == 0 {
-			fmt.Println(i)
-		}
+	case false:
+		fmt.Println("Condition is false")
+		fallthrough
+	case true:
+		fmt.Println("Condition is true")
 
 	}
 
