@@ -20,6 +20,8 @@ func main() {
 
 		fmt.Println("Record  ", i)
 
+		delete(map1, "bond_james")
+
 		for j, v2 := range v1 {
 
 			fmt.Println("Key: ", j, "\tValue: ", v2, "\n")
