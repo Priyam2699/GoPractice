@@ -4,13 +4,13 @@ import "fmt"
 
 func main() {
 
-	for i := 65; i <= 90; i++ {
+	bd := 1985
 
-		fmt.Println(i)
-		for j := 0; j < 3; j++ {
+	for bd < 2022 {
 
-			fmt.Printf("%#U\n", i)
-		}
+		fmt.Println(bd)
+		bd++
+
 	}
 
 }
