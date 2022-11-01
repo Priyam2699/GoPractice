@@ -4,10 +4,20 @@ import "fmt"
 
 func main() {
 
-	x := []int{42, 43, 44, 45, 46, 47, 48, 49, 50, 51}
+	states := make([]string, 50, 50)
 
-	x = append(x[:3], x[6:]...)
+	states = append(states, ` Alabama`, ` Alaska`, ` Arizona`, ` Arkansas`, ` California`, ` Colorado`, ` Connecticut`, ` Delaware`, ` Florida`, ` Georgia`, ` Hawaii`, ` Idaho`, ` Illinois`, ` Indiana`, ` Iowa`, ` Kansas`, ` Kentucky`, ` Louisiana`, ` Maine`, ` Maryland`, ` Massachusetts`, ` Michigan`, ` Minnesota`, ` Mississippi`, ` Missouri`, ` Montana`, ` Nebraska`, ` Nevada`, ` New Hampshire`, ` New Jersey`, ` New Mexico`, ` New York`, ` North Carolina`, ` North Dakota`, ` Ohio`, ` Oklahoma`, ` Oregon`, ` Pennsylvania`, ` Rhode Island`, ` South Carolina`, ` South Dakota`, ` Tennessee`, ` Texas`, ` Utah`, ` Vermont`, ` Virginia`, ` Washington`, ` West Virginia`, ` Wisconsin`, ` Wyoming`)
 
-	fmt.Println(x)
+	states = append(states[0:0], states[50:]...)
+	fmt.Println(states)
+	fmt.Printf("%T\n", states)
+	fmt.Println("Length of Slice", len(states))
+	fmt.Println("Capacity of Slice", cap(states))
+
+	for i := 0; i < len(states); i++ {
+
+		fmt.Println(i, states[i])
+
+	}
 
 }
