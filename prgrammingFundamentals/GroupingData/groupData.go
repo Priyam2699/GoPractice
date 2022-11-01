@@ -4,19 +4,13 @@ import "fmt"
 
 func main() {
 
-	// make function to assign capacity at last
-	// ma(group Type,length,capacity)
-	x := make([]int, 15, 15)
+	jb := []string{"James", "Bond", "Vodka", "Martini"}
+	fmt.Println(jb)
 
-	fmt.Println(cap(x))
-	fmt.Println(len(x))
-	fmt.Println(x)
+	mp := []string{"Miss", "Moneypenny", "At", "Your Service"}
+	fmt.Println(mp)
 
-	x = append(x, 5)
-
-	// if the size becomes greater than capacity then the capacity becomes double the original capacity
-	fmt.Println(cap(x))
-	fmt.Println(len(x))
-	fmt.Println(x)
+	xp := [][]string{jb, mp}
+	fmt.Println(xp)
 
 }
