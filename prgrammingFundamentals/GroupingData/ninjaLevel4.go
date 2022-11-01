@@ -1,29 +1,31 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
-	x := []string{"James", "Bond", "007"}
-	y := []string{"Money", "Penny", "009"}
+	map1 := map[string][]string{
+		"bond_james":      []string{"Shaken, not stirred", "Martini", "Women"},
+		"moneypenny_miss": []string{"Literature", "computer science", "James Bond"},
+		"no_dr":           []string{"Ice cream", "Evil", "Sunsets"},
+	}
 
-	fmt.Println(x)
-	fmt.Println(y)
+	fmt.Println(map1)
 
-	multi := [][]string{x, y}
+	map1["dua_priyam"] = []string{"Money", "Parents", "Friends"}
 
-	fmt.Println(multi)
+	for i, v1 := range map1 {
 
-	// i is index and v is slices
-	for i, v := range multi {
+		fmt.Println("Record  ", i)
 
-		fmt.Println("Record", i)
+		for j, v2 := range v1 {
 
-		for j, t := range v {
-			fmt.Printf("\t Index Position: %v\tValue: %v\n", j, t)
+			fmt.Println("Key: ", j, "\tValue: ", v2, "\n")
 		}
+
 		fmt.Println()
 
 	}
-
 }
