@@ -4,12 +4,11 @@ import "fmt"
 
 func main() {
 
-	bd := 1985
+	for i := 10; i <= 100; i++ {
 
-	for bd < 2022 {
-
-		fmt.Println(bd)
-		bd++
+		if i%4 == 0 {
+			fmt.Println(i)
+		}
 
 	}
 
