@@ -8,18 +8,18 @@ func main() {
 	fmt.Println(len(x))
 	fmt.Println(x)
 
-	// appends element at end of slice
+	var val int
+	fmt.Scan(&val)
 
-	x = append(x, 85, 23, 76)
+	for i, v := range x {
 
-	fmt.Println(len(x))
-	fmt.Println(x)
-
-	y := []int{84, 36, 14, 97}
-
-	// appending a slice to other slice
-	x = append(x, y...)
-	fmt.Println(len(x))
-	fmt.Println(x)
+		if v == val {
+			fmt.Println("Element found at position ", i)
+			fmt.Println("Now deleting the element")
+			x = append(x[:i], x[i+1:]...) // variadic parameter to take whole slice as an input
+			fmt.Printf("The slice after deletion is %v", x)
+			break
+		}
+	}
 
 }
