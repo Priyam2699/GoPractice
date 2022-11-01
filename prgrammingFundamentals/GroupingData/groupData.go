@@ -27,4 +27,11 @@ func main() {
 		fmt.Printf("Key: %v\t\tValue: %v\n", c, d)
 	}
 
+	delete(m, "James")
+	fmt.Println(m)
+	// delete will also work even if the key doesn't exist
+
+	delete(m, "Hello")
+	fmt.Println(m)
+
 }
