@@ -4,15 +4,27 @@ import "fmt"
 
 func main() {
 
-	var arr [5]int
+	// array
+	var arr [5]int = [5]int{5, 4, 3, 2, 1}
 
-	for i := 0; i < 5; i++ {
+	// in arrays you cannot go beyond the length of array
+	//arr[6] = 0
 
-		arr[i] = i + 1
+	fmt.Printf("%v\t%T\n", arr, arr)
 
-	}
+	// x := type{values} composite literal
 
-	fmt.Println(arr)
-	fmt.Println(len(arr))
+	// slices like array but can change the length
+	x := []int{1, 2, 3, 4, 5}
 
+	//	x[5] = 6
+
+	// add a new value to slice using append
+	x = append(x, 6)
+
+	fmt.Printf("%v\t%T\n", x, x)
+
+	// a slice allows me to group values of same type
+
+	// in slice you can go beyond the length
 }
